@@ -1,16 +1,16 @@
 <table width="100%">
 <tbody>
 <tr>
-<td align="center"><br />
-<table align="center" cellpadding="15" width="600" style="margin-left: auto; margin-right: auto; text-align: center; width: 600px;">
+<td align="center">
+<table align="center" cellpadding="4" width="600" style="margin-left: auto; margin-right: auto; text-align: center; width: 600px;">
 <tbody>
 <tr>
 <td align="center">
-<img alt="GLPI: Logo" src="https://www.glpi.example.com/pics/logos/logo-GLPI-500-blue.png" height="68" width="112" />
+<img alt="Grupo Golphe: Logo" src="https://grupogolphe.com.br/img_/logotipo.png" height="96" />
 </td>
 </tr>
 <tr>
-<td valign="top"><br />
+<td valign="top">
 <div style="font-family: Arial, Helvetica, sans-serif; font-size:14px; text-align: left;">
 <!--1 ##IFticket.isdeleted=Sim## -->
 Um ticket que envolve você foi ##lang.ticket.isdeleted##.  O número do ticket é <strong>###ticket.id##</strong> com o assunto <strong>##ticket.title##</strong>##IFticket.category## sob a categoria <strong>##ticket.category##</strong>##ENDIFticket.category##.
@@ -71,14 +71,14 @@ Um ticket que envolve você foi atualizado.  O número do ticket é <strong>###t
 <!--21 ##FOREACH LAST 1 tasks## ##IFticket.action=Nova tarefa## -->
 <tr>
 <td valign="middle" style="background:#FEDA90;">
-<blockquote style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left;"><span style="font-family: Arial, Helvetica, sans-serif; font-size:12px; text-align: left;"><strong>##lang.task.author##</strong>: ##task.author##. <br /> <strong>##lang.task.date##</strong>: ##task.date##. <br /> <strong>##lang.task.status##</strong>: ##task.status##.</span> <br /> ##IFtask.isprivate=Não## <img src="https://www.glpi.example.com/imgs/##IFtask.status=Feito##check-##ENDIFtask.status##square-o.png" alt="##task.status##" width="16" height="16" /> ##task.description## ##ENDIFtask.isprivate## ##ELSEtask.isprivate## <br /> <em>Esta mensagem é privada, confidencial e dirigida exclusivamente ao seu destinatário.</em> ##ENDELSEtask.isprivate##</blockquote>
+<blockquote style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left;"><span style="font-family: Arial, Helvetica, sans-serif; font-size:12px; text-align: left;"><strong>##lang.task.author##</strong>: ##task.author##. <br /> <strong>##lang.task.date##</strong>: ##task.date##. <br /> <strong>##lang.task.status##</strong>: ##task.status##.</span> ##IFtask.isprivate=Não## <img src="https://img.icons8.com/?size=100&id=##IFtask.status=Feito##13902##ENDIFtask.status####ELSEtask.status##KarJz0n4bZSj##ENDELSEtask.status##&format=png&color=40C057" alt="##task.status##" width="24" height="24" /> ##task.description## ##ENDIFtask.isprivate## ##ELSEtask.isprivate## <br /> <em>Esta mensagem é privada, confidencial e dirigida exclusivamente ao seu destinatário.</em> ##ENDELSEtask.isprivate##</blockquote>
 </td>
 </tr>
 <!--22 ##ENDIFticket.action## ##ENDFOREACHtasks## -->
 <!--23 ##FOREACH LAST 1 tasks## ##IFticket.action=Atualização de uma tarefa## -->
 <tr>
 <td valign="middle" style="background:#FEDA90;">
-<blockquote style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left;"><span style="font-family: Arial, Helvetica, sans-serif; font-size:12px; text-align: left;"><strong>##lang.task.author##</strong>: ##task.author##. <br /> <strong>##lang.task.date##</strong>: ##task.date##. <br /> <strong>##lang.task.status##</strong>: ##task.status##.</span> <br /> ##IFtask.isprivate=Não## <img src="https://www.glpi.example.com/imgs/##IFtask.status=Feito##check-##ENDIFtask.status##square-o.png" alt="##task.status##" width="16" height="16" /> ##task.description## ##ENDIFtask.isprivate## ##ELSEtask.isprivate## <br /> <em>Esta mensagem é privada, confidencial e dirigida exclusivamente ao seu destinatário.</em> ##ENDELSEtask.isprivate##</blockquote>
+<blockquote style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left;"><span style="font-family: Arial, Helvetica, sans-serif; font-size:12px; text-align: left;"><strong>##lang.task.author##</strong>: ##task.author##. <br /> <strong>##lang.task.date##</strong>: ##task.date##. <br /> <strong>##lang.task.status##</strong>: ##task.status##.</span> ##IFtask.isprivate=Não## <img src="https://img.icons8.com/?size=100&id=##IFtask.status=Feito##13902##ENDIFtask.status####ELSEtask.status##KarJz0n4bZSj##ENDELSEtask.status##&format=png&color=40C057" alt="##task.status##" width="24" height="24" /> ##task.description## ##ENDIFtask.isprivate## ##ELSEtask.isprivate## <br /> <em>Esta mensagem é privada, confidencial e dirigida exclusivamente ao seu destinatário.</em> ##ENDELSEtask.isprivate##</blockquote>
 </td>
 </tr>
 <!--24 ##ENDIFticket.action## ##ENDFOREACHtasks## -->
@@ -129,11 +129,6 @@ Se você deseja reabrir este ticket de suporte, entre em contato com o agente de
 </td>
 </tr>
 <!--40 ##ENDELSEticket.isdeleted## -->
-<tr>
-<td align="center" valign="bottom">
-<div style="color:#494949; font-family: Arial, Helvetica, sans-serif; font-size:11px;"><a href="https://www.glpi.example.com/" target="_blank" style="border: 0"><img src="https://www.glpi.example.com/EMPRESA-LOGOMARCA.png" alt="Logotipo da empresa" width="182" height="47"></a></div>
-</td>
-</tr>
 </tbody>
 </table>
 </td>
